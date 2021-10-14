@@ -1,0 +1,8 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0VBR0c7RUFDQTtFQUVBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiosXHJcbio6OmFmdGVyLFxyXG4qOjpiZWZvcmUge1xyXG4gICBtYXJnaW46IDBweDtcclxuICAgcGFkZGluZzogMHB4O1xyXG5cclxuICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxufVxyXG4iXX0= */
