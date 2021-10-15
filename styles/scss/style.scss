@@ -1,3 +1,30 @@
+/* Color scheme */
+
+$color-text: #2f3441;
+$color-text-blue: #606981;
+$color-dots: #959595;
+$color-bg-card: #f4f7fa;
+$color-blue: #296093;
+
+$color-red: #df2030;
+$color-red-hover: #ca1920;
+$color-red-push: #ca1920;
+
+/* Extends */
+%ext-font-regular {
+   font-family: Arial !important;
+   font-style: normal !important;
+   font-weight: normal !important;
+}
+
+%ext-font-bold {
+   font-family: Arial !important;
+   font-style: normal !important;
+   font-weight: bold !important;
+}
+
+/* Box model */
+
 *,
 *::after,
 *::before {
@@ -5,4 +32,298 @@
    padding: 0px;
 
    box-sizing: border-box;
+}
+
+.row > *,
+.row {
+   padding-right: 0px !important;
+   padding-left: 0px !important;
+   margin-top: 0px !important;
+}
+
+html {
+   overflow-x: hidden;
+}
+
+.contant__wrapper {
+   max-width: 1140px;
+}
+
+.about {
+   padding-top: 70px;
+   .about__title {
+      h1 {
+         @extend %ext-font-bold;
+
+         font-size: 36px;
+         line-height: 41px;
+
+         color: $color-text;
+      }
+   }
+
+   .about__image {
+      display: block;
+      height: 111px;
+      width: 231px;
+      img {
+         height: 111px;
+         width: 231px;
+      }
+   }
+
+   .about__content {
+      padding-top: 65px;
+   }
+
+   .about__text {
+      margin-bottom: 0px;
+   }
+}
+
+/* Slider */
+
+.slider {
+   margin-top: 60px;
+   .slider__item {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+
+      width: 360px !important;
+      height: 129px;
+
+      padding: 24px;
+
+      margin: 0px 30px 0px 0px;
+
+      background-color: $color-bg-card;
+      border-radius: 5px;
+      .slider__title {
+         @extend %ext-font-bold;
+
+         font-size: 36px;
+         line-height: 28px;
+
+         color: $color-text-blue;
+      }
+      .slider__subtitle {
+         @extend %ext-font-regular;
+
+         font-size: 20px;
+         line-height: 24px;
+
+         margin-top: 8px;
+
+         max-width: 247px;
+
+         color: $color-text-blue;
+      }
+   }
+   .slider__item--unvis {
+      background-color: transparent;
+      width: 0px !important;
+      margin: 0px 0px 0px 0px;
+      padding: 0px;
+   }
+   .slider__item--bg-point,
+   .slider__item--bg-planent,
+   .slider__item--bg-headset,
+   .slider__item--bg-man,
+   .slider__item--bg-carbon_partnership,
+   .slider__item--bg-build {
+      background-repeat: no-repeat;
+      background-position: right;
+   }
+   .slider__item--bg-point {
+      background-image: url(/images/squoosh/point.svg);
+   }
+   .slider__item--bg-planent {
+      background-image: url(/images/squoosh/planen.svg);
+   }
+   .slider__item--bg-headset {
+      background-image: url(/images/squoosh/headset.svg);
+   }
+   .slider__item--bg-man {
+      background-image: url(/images/squoosh/man.svg);
+   }
+   .slider__item--bg-carbon_partnership {
+      background-image: url(/images/squoosh/carbon_partnership.svg);
+   }
+   .slider__item--bg-build {
+      background-image: url(/images/squoosh/build.svg);
+   }
+}
+
+/* Slick */
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+.slider {
+   position: relative;
+}
+
+.slick-track {
+   display: flex;
+}
+
+.slider .slick-arrow {
+   position: absolute;
+   bottom: -8px;
+   z-index: 1;
+   font-size: 0pt;
+   width: 30px;
+   height: 30px;
+   border: none;
+}
+
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+   left: calc(((1440px / 2) - 36px) - ((35px * 6) / 2));
+   background: url(/images/Chevron_Left_Circle.svg) 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+   right: calc(((1440px / 2) - 72px) - ((35px * 6) / 2));
+   background: url(/images/Chevron_Right_Circle.svg) 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-prev:hover,
+.slick-arrow.slick-next:hover {
+   filter: invert(1);
+}
+
+.slider .slick-dots {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin-top: 36px;
+}
+.slider .slick-dots li {
+   list-style: none;
+}
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+   width: 11px;
+   height: 11px;
+
+   border-radius: 50%;
+
+   background-color: $color-blue;
+
+   transition: background-color 0.3s ease-in;
+}
+/* Элемент точки */
+.slider .slick-dots li button {
+   width: 8px;
+   height: 8px;
+
+   border: none;
+   border-radius: 50%;
+
+   background-color: $color-dots;
+
+   transition: background-color 0.3s ease-in;
+
+   font-size: 0pt;
+
+   margin: 0px 12px 0px 12px;
+}
+
+.feedback {
+   margin-top: 80px;
+
+   padding: 102px 0px 140px 0px;
+
+   background-color: $color-bg-card;
+   .feedback__image {
+      width: 554px;
+      height: 409.29px;
+   }
+   .feedback__substring {
+      @extend %ext-font-regular;
+
+      font-size: 18px;
+      line-height: 21px;
+
+      color: $color-text;
+      p {
+         padding-right: 30px !important;
+      }
+   }
+}
+
+.feedback__title {
+   @extend %ext-font-bold;
+
+   font-size: 24px;
+   line-height: 28px;
+
+   color: $color-text;
+}
+
+.feedback__form {
+   padding-left: 30px !important;
+}
+
+label > span {
+   color: $color-red;
+}
+
+.btn {
+   margin: 0px !important;
+   font-size: unset !important;
+   box-shadow: none !important;
+   background-color: $color-red !important;
+
+   border-radius: 3px !important;
+
+   @extend %ext-font-regular;
+
+   font-size: 16px !important;
+   line-height: 18px !important;
+   text-align: center !important;
+
+   color: #ffffff !important;
+
+   width: 186px !important;
+   height: 60px !important;
+
+   transition: background-color 0.3s ease !important;
+   &:hover,
+   &:focus {
+      background-color: $color-red-hover !important;
+      transition: background-color 0.3s ease !important;
+   }
+   &:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+      transition: box-shadow 0.3s ease !important;
+   }
+}
+
+.mt-row {
+   margin-top: 30px !important;
+}
+
+.ml-row {
+   margin-left: 12px !important;
+}
+
+.check-label {
+   @extend %ext-font-regular;
+
+   font-size: 12px !important;
+   line-height: 14px !important;
+
+   color: $color-text;
 }
