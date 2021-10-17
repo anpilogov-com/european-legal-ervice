@@ -1,0 +1,1 @@
+"use strict";window.addEventListener("load",()=>{let t=document.getElementsByClassName("needs-validation");Array.prototype.filter.call(t,function(t){t.addEventListener("submit",e=>{!1===t.checkValidity()&&(e.preventDefault(),e.stopPropagation()),t.classList.add("was-validated")},!1)})},!1);
