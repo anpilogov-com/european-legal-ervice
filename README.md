@@ -46,4 +46,4 @@
 
 Связаться со мной можно по следующим ссылкам:
 
-[`Telegram`](https://t.me/com_anpilogov) [`Facebook`](https://www.facebook.com/profile.php?id=100056203089338) [`Be`](https://www.behance.net/comanpilog39ad) [`Twitter`](https://twitter.com/anpilogov_com) [`Head Hunter`](https://hh.ru/resume/87830578ff093282cb0039ed1f79715a714e66) [`E-mail`](com.anpilogov.a.o@gmail.com)
+[`Telegram`](https://t.me/com_anpilogov) [`Facebook`](https://www.facebook.com/profile.php?id=100056203089338) [`Be`](https://www.behance.net/comanpilog39ad) [`Twitter`](https://twitter.com/anpilogov_com) [`Head Hunter`](https://hh.ru/resume/87830578ff093282cb0039ed1f79715a714e66) [`E-mail`](mailto:com.anpilogov.a.o@gmail.com)
