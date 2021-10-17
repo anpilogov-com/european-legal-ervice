@@ -17,7 +17,9 @@
 Согласно исследованию Google Lighthouse, веб-сайт достаточно хорошо оптимизирован по нескольким направлениям.
 
 🖥 Для рабочего стола 🖥
-![Google Lighthouse research for desktop](https://github.com/anpilogov-com/european-legal-ervice/blob/main/documentation/desktop.png?raw=true) 
+
+![Google Lighthouse research for desktop](https://github.com/anpilogov-com/european-legal-ervice/blob/main/documentation/desktop.png) 
 
 📱 Для телефонов 📱
-![Google Lighthouse research for desktop](https://github.com/anpilogov-com/european-legal-ervice/blob/main/documentation/mobile.png?raw=true) 
+
+![Google Lighthouse research for desktop](https://github.com/anpilogov-com/european-legal-ervice/blob/main/documentation/mobile.png) 
