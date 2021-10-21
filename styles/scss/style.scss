@@ -138,194 +138,142 @@ body {
 }
 
 /* Slider */
-
-.slider {
+.owl-carousel {
    margin-top: 60px;
-   .slider__item {
-      cursor: pointer;
-
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-
-      width: 360px !important;
-      height: 129px;
-
-      padding: 24px;
-
-      margin: 0px 30px 0px 0px;
-
-      background-color: $color-bg-card;
-      border-radius: 5px;
-      .slider__title {
-         @extend %ext-font-bold;
-
-         font-size: 36px;
-         line-height: 28px;
-
-         color: $color-text-blue;
-      }
-      .slider__subtitle {
-         @extend %ext-font-regular;
-
-         font-size: 20px;
-         line-height: 24px;
-
-         margin-top: 8px;
-
-         max-width: 247px;
-
-         color: $color-text-blue;
-      }
-
-      @media (max-width: 440px) {
-         width: 280px !important;
-      }
-
-      @media (max-width: 320px) {
-         width: 260px !important;
-      }
-   }
-   .slider__item--unvis {
-      background-color: transparent;
-      width: 0px !important;
-      margin: 0px 0px 0px 0px;
-      padding: 0px;
-   }
-   .slider__item--bg-point,
-   .slider__item--bg-planent,
-   .slider__item--bg-headset,
-   .slider__item--bg-man,
-   .slider__item--bg-carbon_partnership,
-   .slider__item--bg-build {
-      background-repeat: no-repeat;
-      background-position: right;
-   }
-   .slider__item--bg-point {
-      background-image: url(/images/squoosh/point.svg);
-   }
-   .slider__item--bg-planent {
-      background-image: url(/images/squoosh/planen.svg);
-   }
-   .slider__item--bg-headset {
-      background-image: url(/images/squoosh/headset.svg);
-   }
-   .slider__item--bg-man {
-      background-image: url(/images/squoosh/man.svg);
-   }
-   .slider__item--bg-carbon_partnership {
-      background-image: url(/images/squoosh/carbon_partnership.svg);
-   }
-   .slider__item--bg-build {
-      background-image: url(/images/squoosh/building.svg);
-   }
-}
-
-/* Slick */
-
-.slider {
    position: relative;
+   .owl-stage-outer {
+      .owl-stage {
+         display: flex;
+         .owl-item {
+            cursor: pointer;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            width: 360px !important;
+            height: 129px !important;
+
+            padding: 24px;
+
+            background-color: $color-bg-card;
+            border-radius: 5px;
+            .owl__title {
+               @extend %ext-font-bold;
+
+               font-size: 36px;
+               line-height: 28px;
+
+               color: $color-text-blue;
+            }
+            .owl__subtitle {
+               @extend %ext-font-regular;
+
+               font-size: 20px;
+               line-height: 24px;
+
+               margin-top: 8px;
+
+               max-width: 247px;
+
+               color: $color-text-blue;
+            }
+         }
+
+         .owl__item--bg-point,
+         .owl__item--bg-planent,
+         .owl__item--bg-headset,
+         .owl__item--bg-man,
+         .owl__item--bg-carbon_partnership,
+         .owl__item--bg-build {
+            background-repeat: no-repeat;
+            background-position: right;
+         }
+         .owl__item--bg-point {
+            background-image: url(/images/squoosh/point.svg);
+         }
+         .owl__item--bg-planent {
+            background-image: url(/images/squoosh/planen.svg);
+         }
+         .owl__item--bg-headset {
+            background-image: url(/images/squoosh/headset.svg);
+         }
+         .owl__item--bg-man {
+            background-image: url(/images/squoosh/man.svg);
+         }
+         .owl__item--bg-carbon_partnership {
+            background-image: url(/images/squoosh/carbon_partnership.svg);
+         }
+         .owl__item--bg-build {
+            background-image: url(/images/squoosh/building.svg);
+         }
+      }
+   }
 }
 
-.slick-track {
-   display: flex;
-
-   margin-left: 27%;
-
-   @media (max-width: 1920px) {
-      margin-left: 20%;
-   }
-
-   @media (max-width: 1440px) {
-      margin-left: 10%;
-   }
-
-   @media (max-width: 990px) {
-      margin-left: 5%;
-   }
-
-   @media (max-width: 840px) {
-      margin-left: 32px;
-   }
-
-   @media (max-width: 780px) {
-      margin-left: 32px;
-   }
-}
-
-.slider .slick-arrow {
-   position: absolute;
-   bottom: -8px;
-   z-index: 1;
-   font-size: 0pt;
-   width: 30px;
-   height: 30px;
-   border: none;
-}
-
-/* Стрелка влево */
-.slider .slick-arrow.slick-prev {
-   left: calc(((100vw / 2) - 36px) - ((35px * 6) / 2));
-   background: url(/images/squoosh/сhevron_left.svg) 0 0 / 100% no-repeat;
-
-   @media (max-width: 440px) {
-      left: calc(((100vw / 2) - 42px) - ((35px * 6) / 2));
-   }
-}
-/* Стрелка вправо */
-.slider .slick-arrow.slick-next {
-   right: calc(((100vw / 2) - 36px) - ((35px * 6) / 2));
-   background: url(/images/squoosh/chevron_right.svg) 0 0 / 100% no-repeat;
-
-   @media (max-width: 440px) {
-      right: calc(((100vw / 2) - 42px) - ((35px * 6) / 2));
-   }
-}
-
-.slider .slick-arrow.slick-prev:hover,
-.slick-arrow.slick-next:hover {
-   filter: invert(1);
-}
-
-.slider .slick-dots {
+.owl-nav {
    display: flex;
    align-items: center;
    justify-content: center;
-
-   margin-top: 36px;
-   padding: 0px !important;
+   margin-top: 24px;
+   .owl-prev,
+   .owl-next {
+      width: 30px;
+      height: 30px;
+   }
+   .owl-prev {
+      background: url(/images/squoosh/сhevron_left.svg) 0 0 / 100% no-repeat;
+   }
+   .owl-next {
+      background: url(/images/squoosh/chevron_right.svg) 0 0 / 100% no-repeat;
+   }
 }
-.slider .slick-dots li {
-   list-style: none;
+
+.owl-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 24px !important;
+
+   margin: 0px 30px 0px 30px;
+   .owl-dot {
+      margin: 6px !important;
+      width: 8px !important;
+      height: 8px;
+      border-radius: 100%;
+      background-color: $color-dots !important;
+      transition: all 0.3s ease;
+   }
+
+   .owl-dot.active {
+      margin: 6px !important;
+      width: 11px !important;
+      height: 11px;
+      border-radius: 100%;
+      background-color: $color-blue !important;
+      transition: all 0.3s ease;
+   }
 }
 
-/* Активная точка */
-.slider .slick-dots li.slick-active button {
-   width: 11px;
-   height: 11px;
-
-   border-radius: 50%;
-
-   background-color: $color-blue;
-
-   transition: background-color 0.3s ease-in;
+.extend {
+   display: none;
 }
-/* Элемент точки */
-.slider .slick-dots li button {
-   width: 8px;
-   height: 8px;
 
-   border: none;
-   border-radius: 50%;
+.six {
+   display: none;
+}
 
-   background-color: $color-dots;
+@media (max-width: 768px) {
+   .extend {
+      display: unset;
+   }
+}
 
-   transition: background-color 0.3s ease-in;
-
-   font-size: 0pt;
-
-   margin: 0px 12px 0px 12px;
+@media (min-width: 768px) {
+   .six {
+      display: none;
+   }
 }
 
 /* Feedback */
