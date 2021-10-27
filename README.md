@@ -1,4 +1,11 @@
-![GitHub watchers](https://img.shields.io/github/watchers/anpilogov-com/european-legal-ervice?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/anpilogov-com/european-legal-ervice?style=social) 
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Правильный CSS!" />
+    </a>
+</p>
 
 # Европейская Юридическая Служба
 
