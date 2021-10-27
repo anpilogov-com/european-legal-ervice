@@ -174,7 +174,7 @@ body {
             justify-content: flex-start;
 
             min-width: 250px !important;
-            max-width: 768px;
+            max-width: 320px;
             height: 129px !important;
 
             padding: 24px;
@@ -200,6 +200,9 @@ body {
                max-width: 247px;
 
                color: $color-text-blue;
+            }
+            @media (max-width: 768px) {
+               max-width: 768px;
             }
          }
 
